@@ -1,0 +1,41 @@
+//<INPUT>================================================================================================================================
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  position: relative;
+  border-top: 1px solid black;
+  height: 50px;
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0 20px;
+  background-color: #f8f7f7;
+  font-size: 15px;
+  .req {
+    &.focus {
+      border-top: 1px solid blue;
+    }
+  }
+  .email {
+    &.err {
+      border-top: 1px solid red;
+    }
+  }
+}
+textarea {
+  width: 383px;
+  height: 117px;
+  resize: none;
+}
+textarea.input {
+  width: 383px;
+  height: 117px;
+}
+
+//</INPUT>
